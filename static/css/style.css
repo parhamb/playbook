@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'samim';
+    src: url(../fonts/Samim.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'samim';
+    src: url(../fonts/Samim-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'sahel';
+    src: url(../fonts/Sahel-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'vazir';
+    src: url(../fonts/Vazir-FD-WOL.ttf) format("truetype");
+}
+
+body {
+    font-family: 'samim' !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    text-align: right;
+}
+
+td,
+.btn {
+    direction: rtl;
+}
+
+th {
+    text-align: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'sahel' !important;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+h2 {
+    font-size: 20px !important;
+}
+
+h3 {
+    font-size: 16px !important;
+    font-weight: 300;
+}
+
+ul,
+p,
+i {
+    direction: rtl;
+}
+
+i {
+    text-align: center !important;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+/* List */
+
+ol {
+    font-family: vazir !important;
+    direction: rtl;
+}
+
+ol {
+    counter-reset: item;
+}
+
+ol li {
+    display: block;
+    position: relative;
+}
+
+ol li:before {
+    content: counters(item, ".")".";
+    counter-increment: item;
+    position: absolute;
+    margin-left: 100%;
+    left: 10px;
+    /* space between number and text */
+}
+
+.ask {
+    line-height: 30px;
+    color: navy;
+}
+/* Boostrap Customize */
+
+.sidebar {
+    color: #337ab7 !important;
+}
